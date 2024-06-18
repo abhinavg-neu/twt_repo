@@ -36,10 +36,10 @@ g = dict()
 load_dotenv()
 
 # mongo
-print('MONGO_URI:', os.getenv('MONGO_URI'))
+print('MONGO_URI:', os.getenv('mongodb+srv://gangadharanab:Testpass123@cluster0.pz9tubl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
 
 MONGO_URI = os.getenv('MONGO_URI')
-mongo_client = MongoClient(MONGO_URI)
+mongo_client = MongoClient("mongodb+srv://gangadharanab:Testpass123@cluster0.pz9tubl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 # mongo_client = MongoClient('mongodb://mongo:27017/')
 # class MyMongo(object):
