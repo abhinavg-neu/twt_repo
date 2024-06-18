@@ -34,7 +34,7 @@ g = dict()
 
 # Load environment variables from .env file
 load_dotenv()
-
+#testing auto build
 # mongo
 print('MONGO_URI:', os.getenv('mongodb+srv://gangadharanab:Testpass123@cluster0.pz9tubl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
 
