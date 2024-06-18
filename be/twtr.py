@@ -36,9 +36,8 @@ g = dict()
 load_dotenv()
 #testing auto build
 # mongo
-print('MONGO_URI:', os.getenv('mongodb+srv://gangadharanab:Testpass123@cluster0.pz9tubl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
+print('MONGO_URI:', 'mongodb+srv://gangadharanab:Testpass123@cluster0.pz9tubl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
-MONGO_URI = os.getenv('MONGO_URI')
 mongo_client = MongoClient("mongodb+srv://gangadharanab:Testpass123@cluster0.pz9tubl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 # mongo_client = MongoClient('mongodb://mongo:27017/')
@@ -84,7 +83,7 @@ tweets = dict()
 ################
 def set_env_var():
     global g
-    g['mongo_uri'] = os.environ.get("MONGO_URI")
+    g['mongo_uri'] = "mongodb+srv://gangadharanab:Testpass123@cluster0.pz9tubl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
     if not g['mongo_uri']:
         raise ValueError("MONGO_URI environment variable is not set. Please set it to your MongoDB URI.")
 
