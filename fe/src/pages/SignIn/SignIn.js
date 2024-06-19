@@ -125,7 +125,9 @@ const SignIn = () => {
 
     console.log("Signin.js: fetching from " + `${process.env.REACT_APP_API_SERVICE_URL}/login`)
     // verify user/pwd, get encoded userid as access and refresh tokens in return
-    fetch(`${process.env.REACT_APP_API_SERVICE_URL}/login`, config)
+    // fetch(`${process.env.REACT_APP_API_SERVICE_URL}/login`, config)
+    fetch(`flask-react-alb-966178985.us-east-2.elb.amazonaws.com/login`, config)
+    
     //fetch(`${process.env.REACT_APP_BE_NETWORK}:${process.env.REACT_APP_BE_PORT}/login`, config)
     fetch(`login`, config)
       .then(response => response.json())

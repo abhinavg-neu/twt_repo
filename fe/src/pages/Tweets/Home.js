@@ -9,7 +9,9 @@ const THome = () => {
   
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(`${process.env.REACT_APP_API_SERVICE_URL}/tweets-results`);
+      // const res = await fetch(`${process.env.REACT_APP_API_SERVICE_URL}/tweets-results`);
+      const res = await fetch(`flask-react-alb-966178985.us-east-2.elb.amazonaws.com/tweets-results`);
+      
       //const res = await fetch(`${process.env.REACT_APP_BE_NETWORK}:${process.env.REACT_APP_BE_PORT}/tweets-results`);
       //const res = await fetch(`${process.env.REACT_APP_API_SERVICE_URL}/tweets-results`);
       // const res = await fetch(`tweets-results`);
