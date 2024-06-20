@@ -1,6 +1,7 @@
 .env
 .DS_Store
 cheatsheet.txt
+Terraform\ files/
 
 # Logs
 logs
